@@ -89,6 +89,7 @@ section{
     margin-bottom: 25px;
     transition: 250ms;
     margin-bottom: 0px;
+    font-weight: bolder;
 }
 .header_button:hover{
     color: #3A6EA5;
