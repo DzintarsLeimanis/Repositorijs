@@ -2,6 +2,10 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #E6E8E6;
+}
+* {
+    font-family: 'Courier New', Courier, monospace;
 }
 header{
     display: flex;
@@ -14,6 +18,7 @@ header{
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+    border-radius: 15px;
 }
 .header_logo {
     padding-left: 50px;
@@ -57,6 +62,8 @@ section{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 25px;
+    border-radius: 15px;
+
 }
 .hero_button {
     font: bold 11px;
@@ -116,6 +123,7 @@ hr {
 }
 .ex_price {
     text-decoration: line-through;
+    color: #ff0000;
 }
 .products_grid {
     display: grid;
@@ -144,6 +152,7 @@ footer{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 25px;
+    border-radius: 15px;
 }
 .footer_part_uno{
     display: flex;
@@ -168,9 +177,63 @@ footer p{
     flex-direction: column;
 }
 .search_bar_and_dropdown{
+    /*
     display: grid;
     grid-template-columns: 7fr 1fr 2fr;
     align-content: center;
     justify-content: center;
     align-items: center;
+    */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+.dropdown select{
+    cursor: pointer;
+    background-color: #E6E8E6;
+    border: 2px solid #191919;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 5px;
+}
+section, header, footer{
+    box-shadow: 0 5px 10px #191919;
+}
+.search_bar_and_button{
+    display: flex;
+    max-width: 1000px;
+}
+.search_bar {
+    padding: 5px 5px;
+    width: 800px;
+    background-color: #E6E8E6;
+}
+.search_button{
+    border:1px solid #191919;
+    background-color: #E6E8E6;
+    cursor: pointer;
+    transition: 250ms;
+}
+.search_button:hover{
+    background-color: #3A6EA5;
+
+}
+.search_button svg{
+    stroke: #191919;
+    transition: 250ms;
+}
+.search_button:hover svg{
+    stroke: #E6E8E6;
+}
+.price_area_type_B h2, .price_area_type_B h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.product_img{
+    border-radius: 25px;
+    border: 3px solid #191919;
+}
+.product_item:hover .product_img{
+    border: 3px solid #3A6EA5;
 }
