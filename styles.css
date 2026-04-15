@@ -33,7 +33,11 @@ header{
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    background-color: #191919;
+    /*background-color: #191919;*/
+    /*background-image: url("cat.jpg");*/
+    background-image: url("brick.jpeg");
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -41,6 +45,7 @@ header{
 .hero_section h1{
     color: #3A6EA5;
     transition: 1500ms;
+    text-shadow: 2px 2px #191919;
 }
 .hero_section h1:hover{
     color:#E6E8E6;
@@ -49,6 +54,8 @@ header{
 }
 .hero_section p{
     color: #E6E8E6;
+    text-shadow: 2px 2px #191919;
+    background-color: #3A6EA5;
 }
 section{
     padding-inline: 50px;
